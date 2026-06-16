@@ -1,0 +1,40 @@
+# kimaireviews.com — Review Topic Queue
+# One tool per line. Scheduler picks from top to bottom.
+# Lines starting with # are ignored.
+# Completed topics are tracked in .used_topics.txt
+
+Cursor
+GitHub Copilot
+Notion AI
+Jasper AI
+Copy.ai
+Adobe Firefly
+Runway
+Kling AI
+Pika Labs
+Perplexity AI
+Phind
+Tabnine
+Codeium
+Writesonic
+Rytr
+Anyword
+Synthesia
+HeyGen
+ElevenLabs
+Murf AI
+Otter.ai
+Fireflies.ai
+Mem.ai
+Grammarly
+QuillBot
+Wordtune
+Ideogram
+Leonardo AI
+Descript
+Opus Clip
+Captions.ai
+Raycast AI
+Linear
+Luma AI
+Sora
