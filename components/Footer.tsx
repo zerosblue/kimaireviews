@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CATEGORIES } from '@/lib/reviews'
+import { CATEGORIES } from '@/lib/constants'
 
 export default function Footer() {
   const year = new Date().getFullYear()

@@ -2,8 +2,10 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
+import type { Category } from './constants'
 
-export type Category = 'Writing' | 'Coding' | 'Image' | 'Productivity' | 'Video'
+export type { Category }
+export { CATEGORIES, CATEGORY_COLORS } from './constants'
 
 export interface ReviewFrontmatter {
   title: string
@@ -71,14 +73,4 @@ export function getFeaturedReviews(limit = 3): Review[] {
   const all = getAllReviews()
   const featured = all.filter(r => r.featured)
   return featured.length >= limit ? featured.slice(0, limit) : all.slice(0, limit)
-}
-
-export const CATEGORIES: Category[] = ['Writing', 'Coding', 'Image', 'Productivity', 'Video']
-
-export const CATEGORY_COLORS: Record<Category, string> = {
-  Writing: 'bg-blue-100 text-blue-800',
-  Coding: 'bg-green-100 text-green-800',
-  Image: 'bg-purple-100 text-purple-800',
-  Productivity: 'bg-orange-100 text-orange-800',
-  Video: 'bg-red-100 text-red-800',
 }

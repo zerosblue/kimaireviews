@@ -1,0 +1,13 @@
+2026-06-17 20:00:04,893 [INFO] === KimAI Reviews Scheduler started ===
+2026-06-17 20:00:04,894 [INFO] Loaded 59 topics from topics.txt
+2026-06-17 20:00:04,895 [INFO] Selected topic: Writesonic
+2026-06-17 20:00:04,895 [INFO] Running: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/.venv/bin/python3 /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/generate.py --tool Writesonic --push --log-dir /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/logs
+2026-06-17 20:00:05,329 [INFO] Generating review for: Writesonic [Writing]
+2026-06-17 20:01:16,669 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 20:01:16,701 [INFO] Saved: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/posts/writesonic-review.mdx
+[main 33e2d2c] feat: add Writesonic review
+ 1 file changed, 139 insertions(+)
+ create mode 100644 posts/writesonic-review.mdx
+2026-06-17 20:01:18,396 [INFO] Pushed to GitHub — Vercel deployment triggered.
+2026-06-17 20:01:18,397 [INFO] Done! View at: https://kimaireviews.com/reviews/writesonic-review
+2026-06-17 20:01:18,478 [INFO] ✅ Writesonic review generated and deployed.

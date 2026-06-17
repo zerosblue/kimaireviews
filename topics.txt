@@ -3,38 +3,71 @@
 # Lines starting with # are ignored.
 # Completed topics are tracked in .used_topics.txt
 
-Cursor
-GitHub Copilot
-Notion AI
+# ── Writing ───────────────────────────────────
 Jasper AI
 Copy.ai
-Adobe Firefly
-Runway
-Kling AI
-Pika Labs
-Perplexity AI
-Phind
-Tabnine
-Codeium
 Writesonic
 Rytr
 Anyword
-Synthesia
-HeyGen
-ElevenLabs
-Murf AI
+Sudowrite
+NovelAI
+ProWritingAid
+Hemingway Editor
+Scrivener
+Wordtune
+QuillBot
+
+# ── Coding ────────────────────────────────────
+Windsurf
+Codeium
+Tabnine
+Replit AI
+Amazon CodeWhisperer
+Sourcegraph Cody
+Aider
+Continue.dev
+Zed AI
+Devin AI
+bolt.new
+
+# ── Image ─────────────────────────────────────
+DALL-E 3
+Adobe Firefly
+Stable Diffusion
+Ideogram
+Leonardo AI
+Canva AI
+NightCafe
+Playground AI
+Lexica
+Bing Image Creator
+Magnific AI
+
+# ── Productivity ──────────────────────────────
 Otter.ai
 Fireflies.ai
 Mem.ai
-Grammarly
-QuillBot
-Wordtune
-Ideogram
-Leonardo AI
+Raycast AI
+Reclaim AI
+Motion
+Superhuman AI
+Shortwave
+Reflect
+Linear AI
+Height AI
+Granola
+
+# ── Video / Audio ─────────────────────────────
+Kling AI
+Pika Labs
+Sora
+HeyGen
+Synthesia
 Descript
 Opus Clip
 Captions.ai
-Raycast AI
-Linear
+ElevenLabs
+Murf AI
 Luma AI
-Sora
+Suno AI
+Udio

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { CATEGORIES } from '@/lib/reviews'
+import { CATEGORIES } from '@/lib/constants'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -52,6 +52,9 @@ export default function Header() {
                 </div>
               )}
             </div>
+            <Link href="/reviews" className="text-gray-600 hover:text-indigo-600 font-medium transition-colors">
+              All Reviews
+            </Link>
             <Link href="/about" className="text-gray-600 hover:text-indigo-600 font-medium transition-colors">
               About
             </Link>
@@ -82,6 +85,7 @@ export default function Header() {
                 {cat}
               </Link>
             ))}
+            <Link href="/reviews" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">All Reviews</Link>
             <Link href="/about" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">About</Link>
           </div>
         )}

@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import type { Category } from '@/lib/reviews'
-import { CATEGORY_COLORS } from '@/lib/reviews'
+import type { Category } from '@/lib/constants'
+import { CATEGORY_COLORS } from '@/lib/constants'
 
 interface CategoryBadgeProps {
   category: Category

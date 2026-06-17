@@ -1,0 +1,38 @@
+2026-06-17 09:23:32,433 [INFO] === KimAI Reviews Scheduler started ===
+2026-06-17 09:23:32,433 [INFO] Loaded 59 topics from topics.txt
+2026-06-17 09:23:32,434 [INFO] Selected topic: Jasper AI
+2026-06-17 09:23:32,434 [INFO] Running: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/.venv/bin/python3 /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/generate.py --tool Jasper AI --push --log-dir /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/logs
+2026-06-17 09:23:33,328 [INFO] Generating review for: Jasper AI [Productivity]
+2026-06-17 09:23:33,631 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-06-17 09:23:33,632 [ERROR] Generation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cc7swG89bFqnhYS6RVo1A'}
+2026-06-17 09:23:33,687 [ERROR] ❌ Jasper AI review generation failed. See log for details.
+2026-06-17 09:25:02,471 [INFO] === KimAI Reviews Scheduler started ===
+2026-06-17 09:25:02,471 [INFO] Loaded 59 topics from topics.txt
+2026-06-17 09:25:02,471 [INFO] Selected topic: Jasper AI
+2026-06-17 09:25:02,472 [INFO] Running: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/.venv/bin/python3 /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/generate.py --tool Jasper AI --push --log-dir /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/logs
+2026-06-17 09:25:02,863 [INFO] Generating review for: Jasper AI [Productivity]
+2026-06-17 09:25:59,749 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 09:25:59,769 [INFO] Saved: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/posts/jasper-ai-review.mdx
+2026-06-17 09:26:01,267 [INFO] Pushed to GitHub — Vercel deployment triggered.
+2026-06-17 09:26:01,267 [INFO] Done! View at: https://kimaireviews.com/reviews/jasper-ai-review
+2026-06-17 09:26:01,337 [INFO] ✅ Jasper AI review generated and deployed.
+2026-06-17 14:00:00,856 [INFO] === KimAI Reviews Scheduler started ===
+2026-06-17 14:00:00,856 [INFO] Loaded 59 topics from topics.txt
+2026-06-17 14:00:00,857 [INFO] Selected topic: Copy.ai
+2026-06-17 14:00:00,857 [INFO] Running: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/.venv/bin/python3 /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/generate.py --tool Copy.ai --push --log-dir /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/logs
+2026-06-17 14:00:01,283 [INFO] Generating review for: Copy.ai [Writing]
+2026-06-17 14:00:57,956 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 14:00:57,986 [INFO] Saved: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/posts/copyai-review.mdx
+2026-06-17 14:00:59,610 [INFO] Pushed to GitHub — Vercel deployment triggered.
+2026-06-17 14:00:59,611 [INFO] Done! View at: https://kimaireviews.com/reviews/copyai-review
+2026-06-17 14:00:59,691 [INFO] ✅ Copy.ai review generated and deployed.
+2026-06-17 20:00:04,893 [INFO] === KimAI Reviews Scheduler started ===
+2026-06-17 20:00:04,894 [INFO] Loaded 59 topics from topics.txt
+2026-06-17 20:00:04,895 [INFO] Selected topic: Writesonic
+2026-06-17 20:00:04,895 [INFO] Running: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/.venv/bin/python3 /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/generate.py --tool Writesonic --push --log-dir /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/logs
+2026-06-17 20:00:05,329 [INFO] Generating review for: Writesonic [Writing]
+2026-06-17 20:01:16,669 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-06-17 20:01:16,701 [INFO] Saved: /Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/posts/writesonic-review.mdx
+2026-06-17 20:01:18,396 [INFO] Pushed to GitHub — Vercel deployment triggered.
+2026-06-17 20:01:18,397 [INFO] Done! View at: https://kimaireviews.com/reviews/writesonic-review
+2026-06-17 20:01:18,478 [INFO] ✅ Writesonic review generated and deployed.

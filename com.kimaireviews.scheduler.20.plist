@@ -8,7 +8,7 @@
 
   <key>ProgramArguments</key>
   <array>
-    <string>/opt/homebrew/bin/python3</string>
+    <string>/Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/.venv/bin/python3</string>
     <string>/Users/jungmyungkim/Library/Application Support/Claude/kimaireviews/scheduler.py</string>
   </array>
 
