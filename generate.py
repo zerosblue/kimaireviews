@@ -116,10 +116,24 @@ def git_push(file_path: Path, tool_name: str) -> bool:
             cwd=repo_dir, check=True,
         )
         subprocess.run(["git", "push"], cwd=repo_dir, check=True)
-        log.info("Pushed to GitHub — Vercel deployment triggered.")
+        log.info("Pushed to GitHub.")
         return True
     except subprocess.CalledProcessError as e:
         log.error(f"Git push failed: {e}")
+        return False
+
+
+def vercel_deploy(repo_dir: Path) -> bool:
+    vercel = subprocess.run(["which", "vercel"], capture_output=True, text=True).stdout.strip()
+    if not vercel:
+        vercel = "/usr/local/bin/vercel"
+
+    try:
+        subprocess.run([vercel, "--prod", "--yes"], cwd=repo_dir, check=True)
+        log.info("Vercel production deployment complete.")
+        return True
+    except subprocess.CalledProcessError as e:
+        log.error(f"Vercel deploy failed: {e}")
         return False
 
 
@@ -198,6 +212,8 @@ def main() -> None:
         push_ok = False
         if args.push:
             push_ok = git_push(file_path, tool_name)
+            if push_ok:
+                vercel_deploy(file_path.parent.parent)
 
         send_email_notification(tool_name, slug, success=True)
         log.info(f"Done! View at: https://kimaireviews.com/reviews/{slug}")
