@@ -132,7 +132,7 @@ export default async function ReviewPage({ params }: Props) {
 
       {/* MDX Content */}
       <div className="review-prose">
-        <MDXRemote source={content} />
+        <MDXRemote source={content} components={{ AffiliateButton }} />
       </div>
 
       {/* AdSense — end of article */}
