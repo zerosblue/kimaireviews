@@ -47,7 +47,13 @@ export function getAllReviews(): Review[] {
         content,
       }
     })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .sort((a, b) => {
+      const dateDiff = new Date(b.date).getTime() - new Date(a.date).getTime()
+      if (dateDiff !== 0) return dateDiff
+      const mtimeA = fs.statSync(path.join(reviewsDir, `${a.slug}.mdx`)).mtimeMs
+      const mtimeB = fs.statSync(path.join(reviewsDir, `${b.slug}.mdx`)).mtimeMs
+      return mtimeB - mtimeA
+    })
 }
 
 export function getReviewBySlug(slug: string): Review | null {
