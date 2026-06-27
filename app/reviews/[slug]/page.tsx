@@ -77,9 +77,6 @@ export default async function ReviewPage({ params }: Props) {
 
       {/* AdSense — top of article */}
       {/* <AdUnit slot="YOUR_SLOT_ID_HERE" /> */}
-      <div className="mb-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl h-20 flex items-center justify-center text-gray-400 text-sm">
-        Advertisement — activate AdUnit when AdSense approved
-      </div>
 
       {/* Score card */}
       <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl border border-indigo-100 p-6 mb-8">
@@ -137,9 +134,6 @@ export default async function ReviewPage({ params }: Props) {
 
       {/* AdSense — end of article */}
       {/* <AdUnit slot="YOUR_SLOT_ID_HERE" /> */}
-      <div className="mt-10 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl h-20 flex items-center justify-center text-gray-400 text-sm">
-        Advertisement — activate AdUnit when AdSense approved
-      </div>
 
       {/* Bottom CTA */}
       {affiliateUrl && (

@@ -37,9 +37,7 @@ export default function HomePage() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* AdSense placeholder — top of page */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl h-24 flex items-center justify-center text-gray-400 text-sm">
-          Advertisement — Replace with AdUnit slot
-        </div>
+        {/* <AdUnit slot="YOUR_SLOT_ID_HERE" /> */}
 
         {/* Featured Reviews */}
         {featured.length > 0 && (
@@ -93,9 +91,7 @@ export default function HomePage() {
         )}
 
         {/* AdSense placeholder — bottom of page */}
-        <div className="mb-10 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl h-24 flex items-center justify-center text-gray-400 text-sm">
-          Advertisement — Replace with AdUnit slot
-        </div>
+        {/* <AdUnit slot="YOUR_SLOT_ID_HERE" /> */}
 
         {recent.length === 0 && (
           <div className="py-20 text-center text-gray-400">

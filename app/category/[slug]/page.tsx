@@ -54,9 +54,7 @@ export default async function CategoryPage({ params }: Props) {
       </div>
 
       {/* AdSense placeholder */}
-      <div className="mb-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl h-20 flex items-center justify-center text-gray-400 text-sm">
-        Advertisement
-      </div>
+      {/* <AdUnit slot="YOUR_SLOT_ID_HERE" /> */}
 
       {reviews.length > 0 ? (
         <>
