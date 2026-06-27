@@ -1,0 +1,92 @@
+---
+title: "Continue.dev Review 2026: An Open-Source Copilot That Actually Respects Your Workflow"
+description: "Is Continue.dev the best open-source AI coding assistant? I tested it against Claude for a month to see if it delivers for real developers."
+date: "2026-06-27"
+category: "Coding"
+rating: 4.5
+pros:
+  - "Full control over LLM providers (Claude, GPT, local models)"
+  - "Deep IDE integration without sending telemetry to Big Tech"
+  - "Highly configurable context providers for local files"
+  - "Exceptional support for local model via Ollama"
+cons:
+  - "Requires some configuration to get the best out of it"
+  - "Local model performance depends heavily on your GPU"
+  - "UI can feel slightly clunky compared to polished SaaS products"
+affiliateUrl: "https://continue.dev"
+affiliateText: "Try Continue.dev"
+toolWebsite: "https://continue.dev"
+pricingModel: "Open Source / Free"
+featured: false
+---
+
+## Quick Verdict
+Continue.dev is arguably the most powerful open-source alternative to proprietary coding assistants, offering developers total control over which models power their IDE. It bridges the gap between local privacy and enterprise-grade performance, making it a must-try for any serious dev. While it requires a bit of tinkering to set up, the ability to switch between Claude and local models on the fly is a genuine productivity booster.
+
+## What is Continue.dev?
+As someone who has spent 18 years in CRM and Sales Operations, I have seen countless "AI productivity" tools come and go. Most are just wrappers around APIs with a fancy UI. Continue.dev is different. It is an open-source, extensible AI code assistant that lives directly inside VS Code and JetBrains. 
+
+Instead of locking you into a single vendor's ecosystem, Continue.dev acts as a middleware layer. It allows you to use your choice of LLM—whether that’s Claude 3.5 Sonnet, GPT-4o, or a custom model running locally on your machine via Ollama. For a solo developer in Seoul like me, who values both privacy and speed, this level of control is refreshing.
+
+## Key Features
+*   **Provider Agnostic:** You aren't tied to one company. Swap between Anthropic, OpenAI, Mistral, or local models via Ollama with a simple config file change.
+*   **Context-Aware Chat:** It doesn't just look at the current file; you can point it to specific folders, documentation, or even local codebase indexes to ground its answers.
+*   **Custom Prompt Commands:** You can define your own `/commands` in the `config.json` to handle repetitive tasks like "write unit tests" or "document this function" in your own preferred style.
+*   **Autocomplete Integration:** It provides real-time, tab-to-complete suggestions, which are surprisingly snappy when paired with the right local model.
+*   **Privacy First:** Because it’s open-source, you can run everything entirely offline if your security policies require it.
+
+## Hands-On Experience
+I’ve been using Claude daily for architectural planning and complex debugging for a long time. When I started testing Continue.dev, my main concern was whether it could match the fluid experience of using the Claude web interface while staying within my IDE.
+
+I spent three weeks using Continue.dev for a refactoring project involving a legacy CRM integration. I configured Continue to use Claude 3.5 Sonnet as its primary driver, but for simple boilerplate, I switched it to `llama3` running locally. 
+
+The integration with my VS Code workflow was seamless. Unlike some extensions that try to be too clever and end up hallucinating or slowing down the editor, Continue stayed out of my way. One of my favorite moments was using the "Add File to Context" feature. I could select three different modules, ask for a refactoring plan, and get a coherent answer that understood the cross-file dependencies.
+
+However, it’s not a "plug-and-play" experience like Cursor. You need to edit your `config.json` to get the most out of it. If you aren't comfortable with JSON or basic terminal work, there is a learning curve. That said, as a developer, this configuration power is exactly what I want. I don’t want a black-box tool; I want a tool I can tune.
+
+One minor annoyance: when using local models for autocomplete, my MacBook Pro's fan definitely kicked in more often. If you’re going the local-only route, make sure you have the hardware to back it up. If you are a remote developer working on sensitive client data, the privacy trade-off is absolutely worth it.
+
+## Pricing Breakdown
+
+| Plan | Cost | Best For |
+| :--- | :--- | :--- |
+| **Open Source** | Free | Individuals and hobbyists |
+| **API Model usage** | Pay-per-usage | Pros needing Claude/GPT-4 via API key |
+| **Local Models** | Free | Privacy-conscious or offline devs |
+
+*Note: You pay your model provider (e.g., Anthropic, OpenAI) directly via API keys. Continue itself is free and open-source.*
+
+## Who Should Use Continue.dev?
+You should use Continue.dev if:
+1.  **You care about vendor lock-in:** You want to switch your LLM backend based on the specific coding task or cost-efficiency.
+2.  **You handle sensitive data:** You need the option to run models entirely locally (LLM inference) so your code never leaves your machine.
+3.  **You are a power user:** You want to customize your AI assistant’s behavior through `config.json` rather than relying on a vendor's hard-coded defaults.
+
+If you prefer a "set it and forget it" tool and don't mind paying a monthly subscription for an all-in-one experience, you might prefer Cursor. But for the developer who wants to own their tools, Continue.dev is superior.
+
+## Alternatives to Consider
+*   **Cursor:** The most polished "AI-native" editor. It’s easier to set up but less flexible regarding local model hosting compared to Continue.dev.
+*   **GitHub Copilot:** The industry standard. Great if you want minimal configuration, but it lacks the model-switching flexibility that Continue.dev provides.
+*   **Codeium:** A fast, free alternative that is very easy to install, though it is more closed-source than the Continue.dev ecosystem.
+
+## Final Rating: 4.5 / 5
+
+The 0.5 deduction is purely for the initial configuration hurdle. If the team manages to make the setup process slightly more intuitive for non-power users, this is a perfect 5/5 tool. For those of us already in the terminal, it’s already perfect.
+
+---
+
+## FAQ
+
+**Q: Is Continue.dev actually free?**
+A: Yes, the extension is open-source and free. However, if you choose to use commercial models like Claude or GPT-4, you will need to provide your own API key and pay those providers for the tokens you consume.
+
+**Q: Can I use local models with Continue.dev?**
+A: Absolutely. It integrates natively with Ollama. I use it daily to run Llama 3 or Qwen locally for autocomplete, which keeps my latency low and my privacy high.
+
+**Q: Does it work with JetBrains?**
+A: Yes, Continue.dev is available for both VS Code and JetBrains IDEs. The feature parity is catching up quickly, though VS Code remains the primary development target.
+
+**Q: Will Continue.dev steal my code?**
+A: Because it is open-source, you can audit the code yourself. Unlike proprietary extensions, you control where the data goes. If you use a local model, your code never touches an external server.
+
+<AffiliateButton href="https://continue.dev" text="Try Continue.dev" />
