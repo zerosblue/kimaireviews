@@ -38,15 +38,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <AdSense publisherId="ca-pub-3488498466731854" />
-      </head>
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        <AdSense publisherId="ca-pub-3488498466731854" />
       </body>
     </html>
   )
