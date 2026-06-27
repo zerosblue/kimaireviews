@@ -39,8 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense — replace ca-pub-XXXXXXXXXXXXXXXX with your publisher ID */}
-        {/* <AdSense publisherId="ca-pub-XXXXXXXXXXXXXXXX" /> */}
+        <AdSense publisherId="ca-pub-3488498466731854" />
       </head>
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
